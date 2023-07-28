@@ -9,7 +9,7 @@ export const Card = ({ message, inAdnOut, value, id, removeInvestiment }) => {
     <div key={id} className={inAdnOut === "Entrada" ? style.entry : style.out}>
       <div className={style.info}>
         <h2 className="title two">{message}</h2>
-        <p>{inAdnOut}</p>
+        <p className="headline">{inAdnOut}</p>
       </div>
       <div className={style.handle}>
         <p>{formatted}</p>
