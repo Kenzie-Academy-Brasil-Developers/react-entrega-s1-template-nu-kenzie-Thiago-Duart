@@ -1,0 +1,20 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.aside {
+    margin-top: 3rem;
+}
+
+@media (max-width:425px) {
+    .aside {
+        margin-top: 0;
+    }
+
+    .section {
+        gap: 2rem;
+        justify-content: center;
+    }
+}

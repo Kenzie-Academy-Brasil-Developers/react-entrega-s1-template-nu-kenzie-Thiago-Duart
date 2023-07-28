@@ -1,0 +1,47 @@
+.entry,
+.out {
+    width: 35rem;
+    height: 6.4375rem;
+    border-radius: 4px;
+    background: var(--grey-1, #F8F9FA);
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entry {
+    border-left: 4px solid green;
+}
+
+.out {
+    border-left: 4px solid var(--grey-2);
+}
+
+.handle,
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.handle {
+    align-items: flex-end
+}
+
+@media (max-width:425px) {
+
+    .entry,
+    .out {
+        width: 22.9375rem;
+        height: 11.25rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .handle {
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+}

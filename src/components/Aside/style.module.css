@@ -1,0 +1,10 @@
+.message {
+    margin-top: 3rem
+}
+
+@media (max-width:425px) {
+    .message {
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,15 @@
+.total__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 22.1875rem;
+    height: 6rem;
+    border-radius: 4px;
+    border: 1px solid var(--grey-2, );
+}
+
+.total__container div {
+    display: flex;
+    justify-content: space-between;
+}

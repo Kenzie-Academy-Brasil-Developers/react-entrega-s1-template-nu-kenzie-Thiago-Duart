@@ -1,0 +1,34 @@
+.btn
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    border: 2px solid var(--color-primary-1)
+    background: var(--color-primary-1)
+    width: 100%
+    height: 3rem
+    border-radius: 8px
+    color: white
+    font-size: 1rem
+    font-family: var(--font-family-label)
+    font-weight: bold
+    &.default
+        width: 5.5625rem
+
+    &:hover
+        border: 2px solid var(--color-primary-2)
+        background: var(--color-primary-2)
+
+.secundary
+    height: 2.5rem
+    width: 3.625rem
+    border-radius: 8px
+    border: none
+    background: var(--grey-2)
+    color: var(--grey-4)
+    &.delete
+        width: 4.6rem
+        height: 2rem
+        border-radius: 0
+    &:hover
+        background: var(--grey-3)
+        color: var(--grey-1)
