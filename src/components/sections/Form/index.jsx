@@ -11,6 +11,7 @@ export const Form = ({ addInvestiments }) => {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if(description !== "" && money !== ""){
     const formData = {
       id: uuidv4(),
       description: description,
@@ -18,6 +19,9 @@ export const Form = ({ addInvestiments }) => {
       typeInvestiments: typeInvestiments,
     };
     addInvestiments(formData);
+  }else{
+    alert("Preencha todos os campos")
+  }
     setDescription("");
     setMoney("");
   }
