@@ -5,10 +5,10 @@ import { useState } from "react";
 import style from "./style.module.css";
 export const Registration = () => {
   const [investimentsList, setInvestimentsList] = useState([]);
-  function addInvestiments(data) {
+  const addInvestiments =(data)=> {
     setInvestimentsList([...investimentsList, data]);
   }
-  function removeInvestiment(removeId) {
+  const removeInvestiment =(removeId)=> {
     const newInvestimentsList = investimentsList.filter(
       (inv) => inv.id !== removeId
     );

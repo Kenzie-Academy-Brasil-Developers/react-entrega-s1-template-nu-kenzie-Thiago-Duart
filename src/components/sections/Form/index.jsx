@@ -9,7 +9,7 @@ export const Form = ({ addInvestiments }) => {
   const [money, setMoney] = useState("");
   const [typeInvestiments, setInvestiments] = useState("Entrada");
 
-  function handleSubmit(e) {
+const handleSubmit = (e) => {
     e.preventDefault();
     if(description !== "" && money !== ""){
     const formData = {
@@ -18,10 +18,10 @@ export const Form = ({ addInvestiments }) => {
       money: money,
       typeInvestiments: typeInvestiments,
     };
-    addInvestiments(formData);
-  }else{
-    alert("Preencha todos os campos")
-  }
+      addInvestiments(formData);
+    }else{
+      alert("Preencha todos os campos")
+    }
     setDescription("");
     setMoney("");
   }
